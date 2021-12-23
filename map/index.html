@@ -17,8 +17,8 @@
     <div id="map_canvas"></div>
     <script>
     function initMap() {
-      var myOptions = {//myOptonsという宣言
-        zoom: 8,//オフジェクトで初期化の値を指定 zoomという名前の値は8といったペアになっている
+      var myOptions = {
+        zoom: 8,
         center: {lat: 53.480759, lng: -2.242631},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
@@ -26,7 +26,7 @@
       var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     }
     </script>
-    <script src="https://maps.googleeapis.com/maps/api/js?key=AIzaSyAiV2ZbFIYuD3N4hzGLstSn2e4ZG5A7QlU&&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiV2ZbFIYuD3N4hzGLstSn2e4ZG5A7QlU&callback=initMap"
     async defer></script>
   </body>
 </html>
