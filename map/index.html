@@ -17,16 +17,16 @@
     <div id="map_canvas"></div>
     <script>
     function initMap() {
-      var myOptions = {
-        zoom: 8,
-        center: {lat: 53.480759, lng: -2.242631},
-        mapTypeId: google.maps.MapTypeId.TERRAIN,
-        disableDefaultUI: true
+      var myOptions = {//myOptonsという宣言
+        zoom: 8,//オフジェクトで初期化の値を指定 zoomという名前の値は8といったペアになっている
+        center: {lat: 53.480759, lng: -2.242631},//lat 緯度の略称 lng 経度の略称
+        mapTypeId: google.maps.MapTypeId.TERRAIN,//googlemapが決めているterrrainという値
+        disableDefaultUI: true//userinterfaceはつけなくていいよという指定
       }
-      var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    }
+      var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);//自分のブラウザの中の地図を表示してほしい領域
+    }// mapobject新しいインスタンスを作っている
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=ENTER-API-KEY-HERE&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=ENTER-API-KEY-HERE&callback=initMap"//サードパーティーのAPIを使いたいという指定
+            async defer></script>                                                        //initMapという関数を読んでほしい
   </body>
 </html>
